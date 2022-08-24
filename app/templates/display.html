@@ -11,14 +11,13 @@
   </head>
   <body class="container " style="padding-top: 5%;">
     <div class="row">
-        {% load static %}
-        {% for dish in data %}
+        {% for x in data %}
         <div class="col-md-4">
           <div class="thumbnail">
-            <a href="{{ dish.image.url }}">
-              <img src="{{ dish.image.url }}" alt="Lights" style="width:100%">
+            <a href="{{ x.photo.url }}">
+              <img src="{{ x.photo.url }}" alt="Lights" style="width:100%">
               <div class="caption">
-                <p>{{ dish.title }}</p>
+                <p>{{ x.title }}</p>
               </div>
             </a>
           </div>
